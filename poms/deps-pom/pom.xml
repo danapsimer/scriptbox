@@ -460,15 +460,27 @@
 			</properties>
 		</profile>
 		<profile>
-			<id>osx_profile</id>
+			<id>osx_profile_16</id>
 			<activation>
 				<os>
 					<family>mac</family>
 				</os>
+				<jdk>(,1.6]</jdk>
 			</activation>
 			<properties>
 				<tools.jar>${java.home}/../Classes/classes.jar</tools.jar> 
-				<!--   <tools.jar>${java.home}/../lib/tools.jar</tools.jar> -->
+			</properties>
+		</profile>
+		<profile>
+			<id>osx_profile_17</id>
+			<activation>
+				<os>
+					<family>mac</family>
+				</os>
+				<jdk>[1.7,)</jdk>
+			</activation>
+			<properties>
+				<tools.jar>${java.home}/../lib/tools.jar</tools.jar> 
 			</properties>
 		</profile>
 
